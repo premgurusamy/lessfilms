@@ -65,25 +65,27 @@ video{
 .play-icon{
   width: 75px;
   height: 75px;
+  -o-filter: drop-shadow(-5px 10px 10px rgba(0,0,0,0.3));
   -webkit-filter: drop-shadow(-5px 10px 10px rgba(0,0,0,0.3));
   transition: all 0.3s ease-in;
 }
 .play-polystar{
-  fill:white;
+  fill:rgba(88,194,117,1);
 }
 .play-circle{
-  fill:rgba(88,194,117,1);
+  fill:white;
 }
 svg .arrows:hover path {
     fill:rgba(88,220,117,1);
 }
 .play-icon:hover{
   transition: all 0.3s ease-out;
+  -o-filter: drop-shadow(-5px 10px 10px rgba(0,0,0,0.3));
   -webkit-filter: drop-shadow(-5px 10px 10px rgba(0,0,0,0.5));
 }
 
 /*****#######Mobile Device Style######*******/
-@media only screen and(max-device-width:750px){
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
   .header-video-container{
     height: 400px;
   }
