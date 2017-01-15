@@ -3,20 +3,26 @@
 body{
   font-family:"Catamaran",sans-serif;
   background-color: black;
+
 }
 /*Navbar sections Designs starts here*/
 .navbar-default{
+  -webkit-filter: drop-shadow(-0px 1px 5px rgba(0,0,0,0.1));
   background-color: white;
-  padding: 10px 0px;
 }
 #navbar-menu-list  a{
   font-weight: 700;
+
 }
+.navbar-default .navbar-nav > .active > a,
+  .navbar-default .navbar-nav > .active > a:hover,
+  .navbar-default .navbar-nav > .active > a:focus {
+  border-bottom: 4px solid rgba(88,194,117,1);
+  background-color: white;
+   }
+
 .drop-down-icon{
   margin-left: 5px;
-}
-.dropdown-menu li a{
-  padding:10px 10px;
 }
 .navbar-brand img{
   height: 22px;
@@ -55,4 +61,30 @@ video{
 }
 .jumbotron h1{
   font-weight: 700;
+}
+.play-icon{
+  width: 75px;
+  height: 75px;
+  -webkit-filter: drop-shadow(-5px 10px 10px rgba(0,0,0,0.3));
+  transition: all 0.3s ease-in;
+}
+.play-polystar{
+  fill:white;
+}
+.play-circle{
+  fill:rgba(88,194,117,1);
+}
+svg .arrows:hover path {
+    fill:rgba(88,220,117,1);
+}
+.play-icon:hover{
+  transition: all 0.3s ease-out;
+  -webkit-filter: drop-shadow(-5px 10px 10px rgba(0,0,0,0.5));
+}
+
+/*****#######Mobile Device Style######*******/
+@media only screen and(max-device-width:750px){
+  .header-video-container{
+    height: 400px;
+  }
 }
