@@ -64,7 +64,7 @@ body{
 
 }
 video{
-  background:url(../asset/images/landing-bg-image.png);
+  background-color: rgb(238, 238, 238);
   position: absolute;
   top: 50%;
   left: 50%;
