@@ -5,12 +5,44 @@ body{
   background-color: rgb(250, 250, 250);
 
 }
+/*navbar toggle animation starts here*/
+.navbar-toggle {
+  overflow: hidden;
+}
+.navbar-toggle .icon-bar {
+  -webkit-transition: opacity, -webkit-transform;
+  transition: opacity, -webkit-transform;
+  transition: opacity, transform;
+  transition: opacity, transform, -webkit-transform;
+  -webkit-transition-duration: 200ms;
+          transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0, 0.7);
+          transition-timing-function: cubic-bezier(0.7, 0, 0, 0.7);
+}
+.navbar-toggle:not(.collapsed) .icon-bar:nth-child(1) {
+  -webkit-transform: translateY(6px) rotate(45deg);
+          transform: translateY(6px) rotate(45deg);
+}
+.navbar-toggle:not(.collapsed) .icon-bar:nth-child(2) {
+  opacity: 0;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+.navbar-toggle:not(.collapsed) .icon-bar:nth-child(3) {
+  -webkit-transform: translateY(-6px) rotate(-45deg);
+          transform: translateY(-6px) rotate(-45deg);
+}
+
+/*navbar toggle animation ends here*/
 /*Navbar sections Designs starts here*/
 .navbar-default{
   background-color: white;
 }
 .navbar-toggle{
   border: none;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color:rgba(105,105,105,1);
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus,
@@ -141,7 +173,7 @@ svg .play-button-svg:hover path {
     border:none;
   }
 
-  
+
 /*****#######Mobile Device Style######*******/
 @media only screen and (min-device-width : 320px) and (max-device-width : 750px) {
   #navbar-menu-list  a{
