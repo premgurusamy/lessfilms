@@ -9,18 +9,21 @@
  });
 
 
- $(document).ready(function () {
-     function CloseNav() {
-         $(".navbar-collapse").stop().css({ 'height': '1px' }).removeClass('in').addClass("collapse");
-         $(".navbar-toggle").stop().removeClass('collapsed');
+ //stop iframe video, when modal video cancel
+ $(document).ready(function() {
+   $('#intro-modal-video').on('hidden.bs.modal', function() {
+     var $this = $(this).find('iframe'),
+       tempSrc = $this.attr('src');
+     $this.attr('src', "");
+     $this.attr('src', tempSrc);
+   });
+
+ //stop html5 video, when modal video cancel
+   $('#html5Video').on('hidden.bs.modal', function() {
+     var html5Video = document.getElementById("htmlVideo");
+     if (html5Video != null) {
+       html5Video.pause();
+       html5Video.currentTime = 0;
      }
-
-     $('html').click(function (event) {
-         var clickover = $(event.target);
-         var _opened = $(".navbar-collapse").hasClass("navbar-collapse in");
-         if (_opened === true && !clickover.hasClass("navbar-toggle")) {
-             CloseNav();
-         }
-
-     });
+   });
  });
