@@ -118,10 +118,9 @@ svg .arrows:hover path {
     font-weight: 700;
     font-size: 1.2em;
     margin-top: 15px;
-    text-align: center;
   }
   #navbar-menu-list  {
-    text-align: center;
+  
     background-color: rgb(241, 241, 241);
   }
   .videos-dropdown-box li a{
