@@ -206,7 +206,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 /*****#######Meet Allan Container Style######*******/
 .meet-allan-container{
   margin-top: 80px;
-  margin-bottom: 80px;
+  transition: all 0.3s ease-out;
 }
 .read-more-btn{
   transition: all 0.3s ease-out;
@@ -233,6 +233,34 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .allan-intro-text{
   position: relative;
   top: -28px;
+  transition: all .3s ease-in;
+}
+.allan-intro-video{
+  transition: all .3s ease-out;
+}
+/*****#######Let's Desine Goals Container Style######*******/
+.define-goals-container{
+  margin-top: 80px;
+  margin-bottom: 80px;
+  text-align: center;
+}
+.define-goal-content{
+  margin-bottom: 40px;
+  transition: all .3s ease-in;
+}
+.define-goal-content:hover{
+  opacity: .8;
+  transition: all .3s ease-out;
+}
+.define-goal-content p{
+  padding: 0 30px;
+}
+.define-goals-icon{
+  width: 40px;
+  height: 40px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  opacity: 0.6;
 }
 /*****#######Mobile Device Style######*******/
 @media only screen and (min-device-width : 320px) and (max-device-width : 750px) {
