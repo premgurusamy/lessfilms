@@ -241,7 +241,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 /*****#######Let's Desine Goals Container Style######*******/
 .define-goals-container{
   margin-top: 80px;
-  margin-bottom: 80px;
   text-align: center;
 }
 .define-goal-content{
@@ -258,9 +257,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .define-goals-icon{
   width: 40px;
   height: 40px;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 30px;
   opacity: 0.6;
+}
+/*****#######Improves Conversion Container Style######*******/
+.improves-conversion-container{
+  margin-top: 40px;
+  margin-bottom: 80px;
+  transition: all .3s ease-out;
 }
 /*****#######Mobile Device Style######*******/
 @media only screen and (min-device-width : 320px) and (max-device-width : 750px) {
