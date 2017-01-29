@@ -13,6 +13,8 @@ body{
 }
 .cute-header-text{
   color: rgba(90,90,90,1);
+  line-height: 1.6em;
+  font-weight: 400;
 }
 .cute-paragraph{
   font-size: 1.2em;
@@ -77,7 +79,7 @@ body{
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  border-bottom: 4px solid rgba(50,50,50,1);
+  border-bottom: 2px solid rgba(150,150,150,1);
   background-color: white;
 }
 .videos-dropdown-box{
@@ -180,6 +182,7 @@ svg .play-button-svg:hover path {
     border-radius: 50px;
     color:white;
     background-color: rgba(10,10,10,1);
+    transition: all .3s ease-out;
 }
   .modal-backdrop.in {
     background: rgba(255,255,255,1);
@@ -267,6 +270,128 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   margin-bottom: 80px;
   transition: all .3s ease-out;
 }
+.improves-conversion-video{
+  -o-filter: drop-shadow(-5px 13px 10px rgba(0,0,0,0.3));
+  -webkit-filter: drop-shadow(-5px 13px 10px rgba(0,0,0,0.3));
+}
+
+/*****#####Testimonial Container Style******######*/
+
+.testimonial-container{
+  margin-bottom: 80px;
+}
+.testimonial-content-alignment{
+}
+.testimonial-content-alignment{
+  padding-top: 50px;
+  transition: all .3s ease-out;
+}
+.testimonial-container-borderline-bottom{
+  height: 1px;
+  background-color: rgba(200,200,200,1);
+  border-top: 1px solid rgba(200,200,200,1);
+  -o-filter: drop-shadow(-5px 13px 10px rgba(0,0,0,.5));
+  -webkit-filter: drop-shadow(-5px 13px 10px rgba(0,0,0,.5));
+}
+.testimonial-content-text{
+  font-style: italic;
+  color: rgba(130,130,130,1);
+  line-height: 1.6em;
+  font-size: 1.5em;
+  transition: all .3s ease-out;
+}
+.testimonial-content-alignment h3{
+  color: rgba(88,194,117,1);
+}
+.testimonial-content-alignment h5{
+  color: rgba(130,130,130,1);
+}
+.quote-symbol{
+  color: rgba(130,130,130,.7);
+}
+.testimonial-logo-align{
+  display: flex;
+  margin-top: 30px;
+}
+.client-logo{
+  opacity: 0.5;
+  transition: all .3s ease-out;
+}
+.client-logo:hover{
+  opacity: 0.9;
+  transition: all .3s ease-out;
+}
+.three-logos{
+  display: flex;
+  align-items: center;
+}
+.two-logos{
+  display: flex;
+  align-items: center;
+}
+/*****#####Let's talk about Container Style******######*/
+.lets-talk-about-container{
+  background:url(../asset/images/schedule-call-allan-bg.jpg) center left ;
+  height: 300px;
+  color: rgba(80,80,80,1);
+}
+
+.lets-talk-content{
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.phone-icon{
+  padding-right: 5px;
+}
+.schedule-allan-btn{
+  transition: all 0.3s ease-out;
+  background-color: rgba(64, 176, 95, 1);
+  border-radius:0px;
+  padding:10px 30px;
+  font-size: 1.2em;
+  margin-top: 5px;
+  margin-bottom: 20px;
+
+  -o-filter: drop-shadow(-3px 10px 10px rgba(0,0,0,0.3));
+  -webkit-filter: drop-shadow(-3px 10px 10px rgba(0,0,0,0.3));
+}
+/*****#######Footer Container Style Starts Here######*******/
+.footer-container{
+  margin-top: 80px;
+}
+.footer-logo{
+  height: 25px;
+  margin-bottom: 15px;
+  opacity: 0.7;
+  transition: all .3s ease-out;
+}
+.footer-logo:hover{
+  opacity: .8;
+  transition: all .3s ease-out;
+}
+.footer-social-icon{
+  padding-right: 25px;
+  font-size: 1.3em;
+  color: rgba(105,105,105,1);
+}
+.footer-link{
+  margin-top: 10px;
+}
+.footer-link a{
+  color: rgba(150,150,150,1);
+  font-size: 1em;
+  text-decoration: none;
+}
+.footer-link a:hover{
+  color: rgba(120,120,120,1);
+}
+.footer-paragraph{
+  line-height: 1.5em;
+  font-size: 1.1em;
+  color: rgba(150,150,150,1);
+}
 /*****#######Mobile Device Style######*******/
 @media only screen and (min-device-width : 320px) and (max-device-width : 750px) {
   #navbar-menu-list  a{
@@ -302,4 +427,32 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     margin-bottom: 40px;
     text-align: center;
   }
+  /*****#####Testimonial Container Style******######*/
+  .testimonial-content-alignment{
+    padding-top: 15px;
+    transition: all .3s ease-out;
+    text-align: center;
+  }
+  .testimonial-logo-align{
+    display:inline-block;
+  }
+  /*****#####Let's talk about Container Style******######*/
+  .lets-talk-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+}
+/*****#######Sm Screen Style######*******/
+@media only screen and (min-width : 768px) and (max-width : 991px){
+  /*****#####Testimonial Container Style******######*/
+  .testimonial-content-alignment{
+    padding-top: 15px;
+    text-align: center;
+    transition: all .3s ease-out;
+  }
+
+
 }
