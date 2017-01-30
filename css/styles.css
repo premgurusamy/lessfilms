@@ -331,16 +331,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 }
 /*****#####Let's talk about Container Style******######*/
 .lets-talk-about-container{
-  background:url(../asset/images/schedule-call-allan-bg.jpg) center left ;
+  background:url(../asset/images/schedule-call-allan-bg.jpg) center center ;
   height: 300px;
-  color: rgba(80,80,80,1);
+  color: white;
 }
-
 .lets-talk-content{
   height: 300px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
+}
+.lets-talk-content h2{
+  line-height: 1.3em;
 }
 .phone-icon{
   padding-right: 5px;
@@ -360,6 +362,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 /*****#######Footer Container Style Starts Here######*******/
 .footer-container{
   margin-top: 80px;
+}
+
+.footer-column-content:nth-child(3){
+  display: flex;
+  justify-content: flex-end;
+  background-color: blue;
 }
 .footer-logo{
   height: 25px;
@@ -388,9 +396,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   color: rgba(120,120,120,1);
 }
 .footer-paragraph{
-  line-height: 1.5em;
-  font-size: 1.1em;
+  line-height: 1.6em;
   color: rgba(150,150,150,1);
+}
+.footer-copyright-content{
+  margin-top: 30px;
+  padding:30px 0;
+  border-top: 1px solid rgba(120,120,120,1);
+}
+.footer-copyright-content a{
+  text-decoration:none;
+  color: rgba(100,100,100,1);
 }
 /*****#######Mobile Device Style######*******/
 @media only screen and (min-device-width : 320px) and (max-device-width : 750px) {
@@ -409,6 +425,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   }
   .header-video-container{
     height: 400px;
+  }
+  /***###Schedule a Call Allan Style###****/
+  .lets-talk-about-container{
+    background:url(../asset/images/schedule-call-allan-bg.jpg) center left ;
   }
 }
 /*****#######Xs Screen Style######*******/
