@@ -160,7 +160,7 @@ video{
 svg .play-button-svg:hover path {
     fill:rgba(240,240,240,1);
     transition: all 0.3s ease-out;
- 
+}
 .play-icon:hover{
   transition: all 0.3s ease-out;
 }
