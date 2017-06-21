@@ -150,9 +150,6 @@ video{
 .play-icon{
   width: 75px;
   height: 75px;
-  -o-filter: drop-shadow(-5px 10px 10px rgba(0,0,0,0.3));
-  -webkit-filter: drop-shadow(-5px 10px 10px rgba(0,0,0,0.3));
-  transition: all 0.3s ease-in;
 }
 .play-polystar{
   fill:rgba(88,194,117,1);
