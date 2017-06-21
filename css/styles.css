@@ -158,16 +158,11 @@ video{
   fill:white;
 }
 svg .play-button-svg:hover path {
-    fill:rgba(250,250,250,1);
-
+    fill:rgba(240,240,240,1);
     transition: all 0.3s ease-out;
-    -o-filter: drop-shadow(-5px 10px 10px rgba(0,0,0,0.3));
-    -webkit-filter: drop-shadow(-5px 10px 10px rgba(0,0,0,0.5));
-}
+ 
 .play-icon:hover{
   transition: all 0.3s ease-out;
-  -o-filter: drop-shadow(-5px 10px 10px rgba(0,0,0,0.3));
-  -webkit-filter: drop-shadow(-5px 10px 10px rgba(0,0,0,0.5));
 }
   /*****#######Header Modal Style Here Style######*******/
   /*###Video Modals Designs Here###*/
